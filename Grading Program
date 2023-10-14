@@ -1,0 +1,66 @@
+
+
+using System.Reflection.Metadata.Ecma335;
+
+namespace Online_Grading_Program
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {   // declare variables
+            int grade; 
+            string name;
+            Console.WriteLine("Hello and welcome to my grading program!"); // welcome message
+            Console.WriteLine("Please enter your name"); // user input name
+            name = Console.ReadLine(); // store user input
+            
+            Console.WriteLine("Please enter your grade: "); // user input enter grade
+            grade = int.Parse(Console.ReadLine()); // store user input
+
+
+            if ((grade >= 85) && (grade <= 100)) // check if grade is greater than or equal to 85 and grade is less than or equal to 100
+            {
+                Console.WriteLine($"{name} your grade is a High Distinction"); // print results
+            }
+
+            else if ((grade >= 75) && (grade <= 84)) // check if grade is greater than or equal to 75 and grade is less than or equal to 84
+            {
+                Console.WriteLine($"{name} your grade is a Distinction"); // print results
+
+            }
+            else if ((grade >= 65) && (grade <= 74)) // check if grade is greater than or equal to 65 and grade is less than or equal to 74
+            {
+                Console.WriteLine($"{name} Your grade is a Credit"); // print results
+            }
+
+            else if ((grade >= 55) && (grade <= 64)) // check if grade is greater than or equal to 55 and grade is less than or equal to 64
+            {
+                Console.WriteLine($"{name} Your grade is a Pass"); // print results
+            }
+
+            else if ((grade >= 0) && (grade <= 54)) // check if grade is greater than or equal to 0 and grade is less than or equal to 54
+            {
+                Console.WriteLine($"{name} Your grade is a Fail"); // print results
+                
+            }
+
+            else 
+            {
+                Console.WriteLine("Your grade is invalid. Please enter a grade between 1 and 100"); // print error message
+                
+            }
+            Console.WriteLine("Press any key to exit"); // message to exit program
+            Console.ReadLine(); // read key stroke
+            
+                    
+
+            
+
+}   }   }
+
+
+
+
+        
+    
+    
