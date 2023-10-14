@@ -1,0 +1,52 @@
+
+
+
+using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
+
+namespace Task_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello and welcome to my calculator program");
+            
+            // declare varibles
+            float num1;
+            float num2;
+            float Add;
+            float Sub;
+            float Mult;
+            float Div;
+
+            // user input enter a number
+            Console.Write("Please enter a number: ");
+            // store number user inputted
+            num1 = float.Parse(Console.ReadLine());
+            // user input enter another number
+            Console.Write("Please enter another number: ");
+            // store number user inputted
+            num2 = float.Parse(Console.ReadLine());
+            // addition, subtraction, multiplication and division calcs
+            Add = num1 + num2;
+            Sub = num1 - num2;
+            Mult = num1 * num2;
+            Div = num1 / num2;
+            // print results
+            Console.WriteLine($"{num1} + {num2} = {Add}");
+            Console.WriteLine($"{num1} - {num2} = {Sub}");
+            Console.WriteLine($"{num1} * {num2} = {Mult}");
+            Console.WriteLine($"{num1} / {num2} = {Div}");
+            // exit the program when any key is pressed
+            Console.WriteLine("press any key to exit");
+            Console.ReadKey();
+            
+
+
+
+
+
+        }
+    }
+}
